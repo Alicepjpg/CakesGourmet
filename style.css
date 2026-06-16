@@ -11,27 +11,26 @@
   font-style: normal;
   font-size: 40px;         /* Mantém o tamanho grande do título */
   font-weight: bold;
-  color: #000;
+  color: #311509;
 }
-
-
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px; /* body - 16px */
+    font-size: 16px; 
     line-height: 1.6;
     color: #F7E3CC;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #311509; 
 }
 h1 {
-    font-size: 40px; /* h1 - 32 a 40px */
+    font-size: 40px; 
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: clamp(24px, 3vw, 28px); /* h2 - 24 a 28px */
+    font-size:28px; 
     margin-bottom: 15px;
 }
 
@@ -54,25 +53,15 @@ h2 {
 /* Configuração da Imagem da Logo */
 .logo-img {
     height: 75px;           
-    width: auto;             /* Mantém a proporção original da imagem */
+    width: auto;             
     object-fit: contain;
 }
 
 /* --- Layout Principal (Grid das Colunas) --- */
 .main-layout {
     display: grid;
-    grid-template-columns: 15% 1 gap 15%; /* Divide em 15% | Centro | 15% */
+    grid-template-columns: 15% 1 fr 15%; 
     flex: 1;
-}
-
-/* Colunas Laterais de 15% */
-.sidebar-left, .sidebar-right {
-    background-color: #eaeaea;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 20px;
 }
 
 /* Área Central */
@@ -103,7 +92,8 @@ h2 {
 }
 
 .nav-item:hover {
-    background-color: #AC1912;
+  background-color: #AC1912;
+  color: #FFFDF9; 
 }
 
 /* Área de Texto */
@@ -122,3 +112,256 @@ h2 {
     background-color: #F7E3CC;
     font-size: 14px;
 }
+
+/* Configurações Gerais da Seção - Fundo Marrom Chocolate */
+.testemunhos-section {
+  background-color: #311509; 
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testemunhos-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testemunhos-titulo {
+  color: #FFFDF9; 
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.testemunhos-subtitulo {
+  color: #FFA6A2; 
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.testemunhos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Estilo do Card Profissional - Fundo Marrom Médio */
+.testemunho-card {
+  background: #3D2522; 
+  border-radius: 16px;
+  padding: 40px 30px 30px 30px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(219, 131, 142, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+/* Efeito Hover Realista */
+.testemunho-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Elemento Visual de Aspas */
+.testemunho-aspas {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  font-size: 5rem;
+  color: #FFA6A2;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.testemunho-texto {
+  color: #F5ECE9; 
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Detalhes do Autor */
+.testemunho-autor {
+  border-top: 1px solid rgba(245, 236, 233, 0.1); 
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.autor-nome {
+  color: #FFFDF9; 
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Seção Geral Zigue-Zague */
+.zz-section {
+  background-color: #311509; 
+  padding: 80px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.zz-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.zz-principal-titulo {
+  color: #FFFDF9; 
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.zz-principal-subtitulo {
+  color: #FFA6A2; 
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Estrutura do Bloco (Flexbox) */
+.zz-bloco {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+/* Força o último bloco a não ter margem exagerada na base */
+.zz-bloco:last-child {
+  margin-bottom: 0;
+}
+
+/* A mágica do Zigue-Zague: Inverte a ordem do segundo bloco */
+.zz-bloco.zz-invertido {
+  flex-direction: row-reverse;
+}
+
+/* Lado da Imagem */
+.zz-imagem-wrapper {
+  flex: 1;
+}
+
+.zz-img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: crop;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(219, 131, 142, 0.2);
+  display: block;
+}
+
+/* Lado do Conteúdo de Texto - Estilizado como Card */
+.zz-conteudo {
+  flex: 1;
+  background-color: #3D2522; 
+  padding: 35px;            
+  border-radius: 16px;       
+  border: 1px solid rgba(219, 131, 142, 0.15); 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+}
+
+.zz-tag {
+  color: #FFA6A2; /* Morango */
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.zz-titulo {
+  color: #FFFDF9; /* Baunilha */
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.zz-texto {
+  color: #F5ECE9; 
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Configurações do Banner Principal */
+.hero-section {
+  position: relative;
+  min-height: 80vh; 
+  background-image: url('https://plus.unsplash.com/premium_photo-1681826507324-0b3c43928753?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 30px; 
+}
+
+/* Película protetora para o marrom escuro #2B1816 não apagar o texto */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(43, 24, 22, 0.9), rgba(43, 24, 22, 0.6));
+  z-index: 1;
+}
+
+/* Container do Texto */
+.hero-container {
+  position: relative;
+  z-index: 2; 
+  max-width: 850px;
+  text-align: center;
+}
+
+.hero-titulo {
+  color: #FFFDF9; /* Baunilha */
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-subtitulo {
+  color: #F5ECE9;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+/* Botão Único */
+.hero-botao {
+  display: inline-block;
+  background-color: #FFA6A2; 
+  color: #3D2522; 
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px; 
+  box-shadow: 0 8px 20px rgba(219, 131, 142, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Efeito ao passar o mouse */
+.hero-botao:hover {
+  background-color: transparent;
+  border-color: #FFA6A2;
+  color: #FFA6A2;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(219, 131, 142, 0.4);
+}
+
