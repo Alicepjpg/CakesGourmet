@@ -437,9 +437,10 @@ h2 {
 
 .container-cards {
   display: flex;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+  align-items: stretch;
   gap: 25px;
-  flex-wrap: wrap;
   margin-top: 40px;
 }
 
