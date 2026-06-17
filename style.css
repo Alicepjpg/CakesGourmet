@@ -60,9 +60,8 @@ h2 {
 /* --- Layout Principal (Grid das Colunas) --- */
 .main-layout {
     display: grid;
-    grid-template-columns: minmax(20px, 1fr) minmax(auto, 900px) minmax(20px, 1fr); 
+    grid-template-columns: 15% 1fr 15%;
     flex: 1;
-    width: 100%;
 }
 
 /* Área Central */
