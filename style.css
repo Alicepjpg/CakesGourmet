@@ -436,10 +436,8 @@ h2 {
 /* ===== CARDS MISSÃO / VISÃO / VALORES ===== */
 
 .container-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   justify-content: center;
-  align-items: stretch;
   gap: 25px;
   flex-wrap: wrap;
   margin-top: 40px;
@@ -448,11 +446,8 @@ h2 {
 .card {
   background-color: #F7E3CC;
   width: 260px;
-  min-width: 260px;
   padding: 25px;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
 
