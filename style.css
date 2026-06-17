@@ -60,7 +60,7 @@ h2 {
 /* --- Layout Principal (Grid das Colunas) --- */
 .main-layout {
     display: grid;
-    grid-template-columns: 15% 1fr 15%;
+    grid-template-columns: 15% 1 fr 15%; 
     flex: 1;
 }
 
@@ -487,4 +487,3 @@ h2 {
     background-color: #AC1912;
     color: #FFFDF9;
 }
-
