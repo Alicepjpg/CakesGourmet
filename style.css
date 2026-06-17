@@ -487,12 +487,4 @@ h2 {
     background-color: #AC1912;
     color: #FFFDF9;
 }
-/* --- Ajuste Exclusivo para os Cartões do Quem Somos --- */
-
-/* Alinha os cartões um embaixo do outro e centraliza na tela */
-.content-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza tudo o que estiver aqui dentro */
-}
 
